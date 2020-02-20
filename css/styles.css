@@ -74,13 +74,22 @@ article {
 .bungee-inline-2 {
   font-family: 'Bungee Inline', cursive;
   font-weight: normal;
-  font-size: 44px;
+  font-size: 40px;
+  color: #56D7CC;
+}
+
+.bungee-inline-3 {
+  font-family: 'Bungee Inline', cursive;
+  font-weight: normal;
+  font-size: 40px;
+  color: #56D7CC;
+  position: absolute;
 }
 
 .titillium-web {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 100;
-  font-size: 440px;
+  font-size: 140px;
 }
 
 .button-1 {
@@ -146,6 +155,8 @@ header .container {
 
 .article-container-1 {
   display: inline-block;
+  border: 2px solid #56D7CC;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 30%;
@@ -250,16 +261,15 @@ img:hover {
 }
 
 .image-1 {
-  display: block;
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
-    /* background-color: black; */
+  border: 2px solid #56D7CC;
+  position: relative;
 }
 
-.image-1 img {
-  width: 100%;
+.image-size {
+  border: 2px solid #56D7CC;
+  position: relative;
+  width: 350px;
+  height: 300px;
 }
 
 
