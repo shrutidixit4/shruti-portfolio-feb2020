@@ -1,49 +1,53 @@
-
-
 /* Font Family Possibilities */
-/*
-font-family: 'Pacifico', cursive;
-font-family: 'Comfortaa', cursive;
-font-family: 'Catamaran', sans-serif;
-font-family: 'Lalezar', cursive;
-font-family: 'Julius Sans One', sans-serif;
-font-family: 'Fredericka the Great', cursive;
-font-family: 'Syncopate', sans-serif;
-font-family: 'Titan One', cursive;
-font-family: 'Bungee Outline', cursive;
-font-family: 'Bungee Hairline', cursive;
-font-family: 'Bungee Shade', cursive;
-font-family: 'Bungee Inline', cursive;
-font-family: 'Bungee', cursive;
-font-family: 'Barlow', sans-serif;
-font-family: 'Barlow Condensed', sans-serif;
-font-family: 'Barlow Semi Condensed', sans-serif;
-font-family: 'Saira', sans-serif;
-font-family: 'Saira Condensed', sans-serif;
-font-family: 'Saira Semi Condensed', sans-serif;
-font-family: 'Saira Extra Condensed', sans-serif;
-font-family: 'Saira Stencil One', cursive; */
-
-
+html, body {
+  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  font-family: 'Bungee Inline', cursive;
+  font-family: 'Bungee Shade', cursive;
+  font-family: 'Bungee Outline', cursive;
+  font-family: 'Bungee', cursive;
+  font-family: 'Bungee Hairline', cursive;
+  font-family: 'Saira', sans-serif;
+  font-family: 'Saira Semi Condensed', sans-serif;
+}
 /* Begin CSS Here */
 
-head, body {
+body, footer, header {
   font-family: 'Saira', sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border: none;
-  font-size: 24px;
-  /* height: 2000px; */
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  align-content: center;
+  /* height: 2400px; */
 }
 
-main article{
-  background-color: beige;
+
+main article {
+  display: block;
+  background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, li, p {
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
-  font-family: 'Saira Condensed', sans-serif;
+  font-family: 'Saira Semi Condensed', sans-serif;
   font-weight: 100;
   font-size: 30px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
 }
 
 section {
@@ -53,137 +57,121 @@ section {
 }
 
 article {
-  display: block;
+  display: inline-block;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 /* General Classes */
 
-.saira-stencil-one {
-  font-family: 'Saira Stencil One', cursive;
-  font-weight: bold;
-  font-size: 140px;
-}
-
 .bungee-inline {
-  font-family: 'Bungee Inline', curesive;
-  font-weight: bold;
+  font-family: 'Bungee Inline', cursive;
+  font-weight: normal;
   font-size: 140px;
+  color: #56D7CC;
 }
 
 .bungee-inline-2 {
-  font-family: 'Bungee Inline', curesive;
-  font-weight: bold;
+  font-family: 'Bungee Inline', cursive;
+  font-weight: normal;
   font-size: 44px;
 }
 
-.barlow {
-  font-family: 'Barlow', sans-serif;
-  font-weight: lighter;
-  font-size: 140px;
+.titillium-web {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 100;
+  font-size: 440px;
 }
 
 .button-1 {
-  display: inline-block;
+  display: block;
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 5px 20px;
 }
 
-.button-2 {
-  display: inline-block;
-}
-
-.left-justify {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  text-align: left;
-  color: black;
-}
-
-.right-justify {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: flex-end;
-  position: absolute;
-  text-align: right;
-  color: black;
-}
-
-.center-justify {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  text-align: center;
-  color: black;
+.button-1:hover {
+  display: block;
+  border: 2px solid #56D7CC;
+  background-color: #56D7CC;
+  color: white;
+  padding: 5px 20px;
 }
 
 .callouts {
   font-family: 'Saira', sans-serif;
   font-size: 40px;
-  font-weight: 100;
+  font-weight: normal;
   width: 1200px;
   height: auto;
   position: relative;
-  justify-content: flex-end;
-  align-items: flex-end;
-  color: black;
+  color: white;
   text-transform: uppercase;
-
 }
+
+
+/* Containers */
 
 .container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 800px;
-  /* background-color: teal; */
 }
 
-.summary-container {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 450px;
-  height: 300px;
-}
-
-/* Header and Start Home Page Nav Classes and IDs */
-
-.start-header nav {
-  background-color: beige;
-  color: #7B98AA;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  margin: auto;
-  padding: 30px;
-  height: 50px;
-  width: 100%;
-  text-transform: uppercase;
-}
-
-.start-header a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-}
-
-.background-hero-1 {
+.hero-container-1 {
   background-image: url("../images/shruti-1.jpg");
   background-size: cover;
   background-position: center;
+  width: 1680px;
   height: 800px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-content: flex-end;
   position: relative;
 }
 
+.section-container-1 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vw;
+  height: 1200px;
+  background-color: teal;
+}
+
+.article-container-1 {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+.summary-container {
+  display: block;
+  align-items: flex-end;
+  width: 550px;
+  height: 200px;
+}
+
+/* Header and Start Home Page Nav - Other Classes and IDs */
+
+
+.start-header a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+
 .background-layer {
-    background-color: rgba(248, 247, 216, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     display: block;
     position: absolute;
     top: 0;
@@ -206,12 +194,6 @@ article {
 
 
 
-
-
-
-
-
-
 /* Images CSS: */
 
 
@@ -224,95 +206,61 @@ article {
 
 img:hover {
   filter: grayscale(100%);
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  /* animation: shake 2s; */
+  /* When the animation is finished, start again */
+  /* animation-iteration-count: infinite; */
+}
+
+/* @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-3deg); }
+    20% { transform: translate(-3px, 0px) rotate(2deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(2deg); }
+    50% { transform: translate(-1px, 2px) rotate(-3deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-3deg); }
+    80% { transform: translate(-1px, -1px) rotate(2deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-3deg); }
+  } */
+
+  /* If you want the image zoom in effect within the square container for the images
+  [1] The container
+  .img-hover-zoom {
+    height: 300px;
+    overflow: hidden;
+  }
+  [2] Transition property for smooth transformation of images
+  .img-hover-zoom img {
+    transition: transform .5s ease;
+  }
+  [3] Finally, transforming the image when container gets hovered
+  .img-hover-zoom:hover img {
+    transform: scale(1.5);
+  } */
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 2px solid #56D7CC;
+  z-index: -1;
 }
 
 .image-1 {
-  display: inline-block;
-  width: 50%;
-  height: 500px;
-  z-index: -1;
-  /* background-color: black; */
-}
-
-
-
-.image-2 {
-  display: inline-block;
-  width: 50%;
-  height: 500px;
-  z-index: -1;
-  /* background-color: black; */
-
-}
-
-
-.image-3 {
-  display: inline-block;
-  width: 50%;
-  height: 500px;
-  z-index: -1;
-  /* background-color: black; */
-
-}
-
-
-.image-4 {
-  display: inline-block;
-  width: 50%;
-  height: 500px;
-  z-index: -1;
-  /* background-color: black; */
-
-}
-
-
-.image-5 {
-  display: inline-block;
-  width: 50%;
-  height: 500px;
-  z-index: -1;
-  /* background-color: black; */
-
-}
-
-
-.article-container {
   display: block;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+    /* background-color: black; */
 }
 
-
-
-.image-1-container {
-  display: flex;
-  flex-direction: column;
+.image-1 img {
+  width: 100%;
 }
-
-
-
-.image-2-container {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.image-3-container {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.image-4-container {
-  display: flex;
-  flex-direction: column;
-}
-
-
-.image-5-container {
-  display: flex;
-  flex-direction: column;
-}
-
-
 
 
 
