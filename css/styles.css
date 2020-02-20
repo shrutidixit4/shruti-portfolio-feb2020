@@ -46,8 +46,10 @@ h2 {
 
 header nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  width: 550px;
+  align-content: center;
+  width: 960px;
 }
 
 section {
@@ -67,7 +69,7 @@ article {
 .bungee-inline {
   font-family: 'Bungee Inline', cursive;
   font-weight: normal;
-  font-size: 140px;
+  font-size: 84px;
   color: #56D7CC;
 }
 
@@ -86,10 +88,18 @@ article {
   position: absolute;
 }
 
+.saira {
+  font-family: 'Saira', sans-serif;
+  font-weight: 400;
+  font-size: 84px;
+  color: white;
+}
+
 .titillium-web {
   font-family: 'Titillium Web', sans-serif;
   font-weight: 100;
-  font-size: 140px;
+  font-size: 84px;
+  color: white;
 }
 
 .button-1 {
@@ -112,7 +122,7 @@ article {
   font-family: 'Saira', sans-serif;
   font-size: 40px;
   font-weight: normal;
-  width: 1200px;
+  width: 1250px;
   height: auto;
   position: relative;
   color: white;
@@ -130,6 +140,8 @@ article {
 header .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .hero-container-1 {
@@ -148,6 +160,8 @@ header .container {
 .section-container-1 {
   display: flex;
   justify-content: flex-start;
+  overflow: scroll;
+  /* flex-wrap: wrap; */
   width: 100vw;
   height: 1200px;
   background-color: teal;
@@ -171,38 +185,31 @@ header .container {
 
 /* Header and Start Home Page Nav - Other Classes and IDs */
 
+#main-logo {
+  width: 100px;
+  margin: 0 auto;
+  filter: none;
+}
 
 .start-header a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
-  font-weight: 100;
   font-size: 16px;
 }
 
 
 .background-layer {
     background-color: rgba(0, 0, 0, 0.7);
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-
-/* .body-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 10px;
-  height: 50px;
-  width: 50%;
-  text-transform: uppercase;
-} */
-
 
 
 /* Images CSS: */
@@ -215,8 +222,40 @@ header .container {
 /* } */
 
 
-img:hover {
+.box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 2px solid #56D7CC;
+  z-index: -1;
+}
+
+.box-2 {
+  width: 500px;
+  height: 700px;
+  border: 2px solid #56D7CC;
+  z-index: -1;
+}
+
+.image-1 {
+  border: 2px solid #56D7CC;
+  position: relative;
+}
+
+.image-size {
+  border: 2px solid #56D7CC;
+  position: relative;
+  width: 350px;
+  height: 300px;
+}
+
+
+img {
   filter: grayscale(100%);
+}
+
+img:hover {
+  filter: none;
   /* Start the shake animation and make the animation last for 0.5 seconds */
   /* animation: shake 2s; */
   /* When the animation is finished, start again */
@@ -251,26 +290,6 @@ img:hover {
   .img-hover-zoom:hover img {
     transform: scale(1.5);
   } */
-
-.box {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  border: 2px solid #56D7CC;
-  z-index: -1;
-}
-
-.image-1 {
-  border: 2px solid #56D7CC;
-  position: relative;
-}
-
-.image-size {
-  border: 2px solid #56D7CC;
-  position: relative;
-  width: 350px;
-  height: 300px;
-}
 
 
 
