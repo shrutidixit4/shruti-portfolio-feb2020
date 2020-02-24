@@ -163,8 +163,16 @@ header .container {
   overflow: scroll;
   /* flex-wrap: wrap; */
   width: 100vw;
-  height: 1200px;
+  height: 1000px;
   background-color: teal;
+}
+
+.section-container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 500px;
 }
 
 .article-container-1 {
@@ -183,7 +191,11 @@ header .container {
   height: 200px;
 }
 
-/* Header and Start Home Page Nav - Other Classes and IDs */
+.about-container {
+
+}
+
+/* Other Classes and IDs */
 
 #main-logo {
   width: 100px;
@@ -198,9 +210,8 @@ header .container {
   font-size: 16px;
 }
 
-
 .background-layer {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -209,6 +220,13 @@ header .container {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.about {
+  text-align: center;
+  background-color: #56D7CC;
+  padding: 100px 300px;
+  color: black;
 }
 
 
@@ -220,6 +238,7 @@ header .container {
   width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
   /* padding: 5px; /* if you want space between the images */
 /* } */
+
 
 
 .box {
