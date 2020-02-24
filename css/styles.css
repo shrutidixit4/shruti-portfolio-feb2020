@@ -191,6 +191,15 @@ header .container {
   height: 200px;
 }
 
+.work-display {
+  display: flex;
+}
+
+.work-container {
+  display: flex;
+  flex-direction: row;
+}
+
 .about-container {
 
 }
@@ -229,6 +238,11 @@ header .container {
   color: black;
 }
 
+.pages {
+  width: 100vw;
+  height: 100vw;
+  scroll-snap-align: start;
+}
 
 /* Images CSS: */
 
@@ -311,6 +325,33 @@ img:hover {
   } */
 
 
+
+
+/* Colors: */
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-blue {
+  background-color: cornflowerblue;
+}
+
+.bg-orange {
+  background-color: orange;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-violet {
+  background-color: violet;
+}
 
 
 /* Responsive area */
