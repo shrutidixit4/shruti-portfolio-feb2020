@@ -161,6 +161,17 @@ header .container {
   position: relative;
 }
 
+.hero-container-2 {
+  background-color: black;
+  width: 100vw;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
 .section-container-1 {
   display: flex;
   justify-content: flex-start;
@@ -188,15 +199,15 @@ header .container {
   width: 30%;
 }
 
-/* .article-container-2 {
-  display: flex;
-  border: 2px solid #56D7CC;
+.article-container-2 {
+  display: block;
+  background-color: : #56D7CC;
   position: relative;
-  align-items: center;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  width: 70%;
   margin-top: 30px;
-} */
+}
 
 .summary-container {
   display: block;
@@ -350,6 +361,8 @@ header .container {
   height: 400px;
   justify-content: center;
   align-items: center;
+  margin: 20px 0;
+  padding: 20px 0;
 }
 
   /* If you want the image zoom in effect within the square container for the images
@@ -430,7 +443,7 @@ header .container {
   padding: 10px;
   align-content: center;
   text-decoration: none;
-  color: #56D7CC;
+  color: white;
 }
 
 .project-page-menu div nav img {
