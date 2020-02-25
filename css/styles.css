@@ -76,7 +76,7 @@ article {
 .bungee-inline-2 {
   font-family: 'Bungee Inline', cursive;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 24px;
   color: #56D7CC;
 }
 
@@ -200,6 +200,14 @@ header .container {
   flex-direction: row;
 }
 
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 440px;
+  background-color: #56D7CC;
+}
+
 .about-container {
 
 }
@@ -208,6 +216,12 @@ header .container {
 
 #main-logo {
   width: 100px;
+  margin: 0 auto;
+  filter: none;
+}
+
+#main-logo-2 {
+  width: 50px;
   margin: 0 auto;
   filter: none;
 }
@@ -288,7 +302,7 @@ img {
 }
 
 img:hover {
-  filter: none;
+  /*filter: none;*/
   /* Start the shake animation and make the animation last for 0.5 seconds */
   /* animation: shake 2s; */
   /* When the animation is finished, start again */
@@ -327,7 +341,14 @@ img:hover {
 
 
 
+
+
+
 /* Colors: */
+
+.bg-bright-green {
+  background-color: #56D7CC;
+}
 
 .bg-red {
   background-color: red;
@@ -352,6 +373,159 @@ img:hover {
 .bg-violet {
   background-color: violet;
 }
+
+
+/* Project Pages: */
+
+
+.project-page-menu {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+}
+
+.project-page-menu nav {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.project-page-menu nav a {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  align-content: center;
+  text-decoration: none;
+  color: #56D7CC;
+}
+
+#project-1 {
+
+}
+
+#project-2 {
+
+}
+
+#project-3 {
+
+}
+
+#project-4 {
+
+}
+
+#project-5 {
+
+}
+
+/* #project-6 {
+
+}
+
+#project-7 {
+
+}
+
+#project-8 {
+
+} */
+
+
+
+
+/* Accordian for WORK Project Pages: */
+
+
+
+
+* {
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+.slider {
+  width:760px;
+  height:340px;
+  overflow:hidden;
+  margin:40px auto;
+  box-shadow:2px 4px 10px rgba(125,125,125, 0.8);
+}
+
+.slider ul {
+  list-style-type:none;
+  width:10000px;
+  overflow: hidden;
+}
+
+.slider ul li {
+  position:relative;
+  display:block;
+  float:left;
+  width:152px;
+  border-left:1px solid rgba(145,145,145, 0.6);
+  border-right:1px solid rgba(145,0,0, 1);
+  box-shadow:0 0 20px 1px rgba(22,22,22, 0.5);
+
+
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease;
+  transition:all 0.5s ease;
+}
+
+.slider ul:hover li {
+  width:40px;
+}
+
+.slider ul li:hover {
+  width:600px;
+}
+
+.slider ul li:hover img {
+  filter: none;
+}
+
+.slider li img {
+  display:block;
+  height:340px;
+}
+
+.title {
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:600px;
+  background:rgba(22,22,22,0.4);
+}
+
+.title a {
+  display:block;
+  padding:20px;
+  color:#56D7CC;
+  font:18px;
+  text-decoration:none;
+}
+
+.title p {
+  font-family: 'Saira', sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  color: white;
+}
+
+
+
+
+
+
 
 
 /* Responsive area */
