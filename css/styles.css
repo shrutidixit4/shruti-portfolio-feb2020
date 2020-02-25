@@ -48,7 +48,8 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  width: 960px;
+  width: 840px;
+  padding-top: 10px;
 }
 
 section {
@@ -69,7 +70,11 @@ article {
   font-family: 'Bungee Inline', cursive;
   font-weight: normal;
   font-size: 104px;
-  color: #56D7CC;
+  text-shadow: 2px 2px #56D7CC;
+  text-shadow: 4px 4px white;
+  color: black;
+  /* text-shadow: 2px 2px #000000;
+  color: #56D7CC; */
   width: inherit;
 }
 
@@ -114,6 +119,7 @@ header .container {
   background-position: top;
   width: 100vw;
   height: 800px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -174,7 +180,11 @@ header .container {
   flex-direction: column;
   justify-content: center;
   width: 100vw;
-  height: 500px;
+  height: 600px;
+  text-align: center;
+  background-color: #56D7CC;
+  padding: 50px 40px;
+  color: black;
 }
 
 .work-display {
@@ -231,9 +241,14 @@ header .container {
   filter: none;
 }
 
+.start-header {
+  justify-content: space-between;
+  align-content: center;
+  margin: 0 auto;
+}
+
 .start-header a {
   text-decoration: none;
-  /* position: absolute; */
   color: black;
   text-transform: uppercase;
   font-size: 16px;
@@ -256,10 +271,10 @@ header .container {
   font-family: 'Saira', sans-serif;
   font-size: 40px;
   font-weight: normal;
-  width: 1250px;
+  width: 1050px;
   height: auto;
   position: relative;
-  color: white;
+  color: black;
   text-transform: uppercase;
 }
 
@@ -271,8 +286,7 @@ header .container {
 }
 
 .background-layer p {
-  width: 1250px;
-  color: white;
+  width: 1050px;
 }
 
 .summary-box {
@@ -365,14 +379,28 @@ header .container {
   padding: 5px 20px;
 }
 
-.about {
-  text-align: center;
-  background-color: #56D7CC;
-  padding: 100px 300px;
+.about-image-box {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  height: inherit;
+  padding: 50px 40px;
   color: black;
 }
 
-
+.about-name {
+  font-family: 'Bungee Inline', cursive;
+  font-weight: normal;
+  font-size: 40px;
+  text-shadow: 2px 2px #000000;
+  color: #56D7CC;
+  width: 55%;
+  position: absolute;
+  /* right: 0;
+  top: 360px; */
+  margin-right: 20px;
+  z-index: 8;
+}
 
 
 
