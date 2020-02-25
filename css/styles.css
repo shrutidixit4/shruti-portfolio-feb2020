@@ -10,8 +10,11 @@ html, body {
   font-family: 'Bungee Hairline', cursive;
   font-family: 'Saira', sans-serif;
   font-family: 'Saira Semi Condensed', sans-serif;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
-/* Begin CSS Here */
+
+/* General */
 
 body, footer, header {
   font-family: 'Saira', sans-serif;
@@ -24,12 +27,13 @@ body, footer, header {
   font-weight: 300;
   text-transform: uppercase;
   align-content: center;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
   /* height: 2400px; */
 }
 
-
 main article {
-  display: block;
+  display: flex;
   background-color: black;
 }
 
@@ -64,7 +68,7 @@ article {
   padding: 20px;
 }
 
-/* General Classes */
+/* Fonts Buttons and Main Page Summary Callouts */
 
 .bungee-inline {
   font-family: 'Bungee Inline', cursive;
@@ -184,6 +188,16 @@ header .container {
   width: 30%;
 }
 
+/* .article-container-2 {
+  display: flex;
+  border: 2px solid #56D7CC;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 30px;
+} */
+
 .summary-container {
   display: block;
   align-items: flex-end;
@@ -191,26 +205,57 @@ header .container {
   height: 200px;
 }
 
+/* .hamburger-container {
+  justify-content: flex-end;
+  top: 0;
+  right: 0;
+} */
+
 .work-display {
-  display: flex;
+  display: block;
+  justify-content: center;
 }
 
 .work-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1082px;
+  margin: 0 auto;
+}
+
+.work-justify {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100vw;
   height: 440px;
   background-color: #56D7CC;
+}
+
+.pages {
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .about-container {
 
 }
+
+
 
 /* Other Classes and IDs */
 
@@ -220,14 +265,16 @@ header .container {
   filter: none;
 }
 
-#main-logo-2 {
+.main-logo-2 {
   width: 50px;
   margin: 0 auto;
   filter: none;
+  align-content: flex-start;
 }
 
 .start-header a {
   text-decoration: none;
+  /* position: absolute; */
   color: white;
   text-transform: uppercase;
   font-size: 16px;
@@ -252,21 +299,8 @@ header .container {
   color: black;
 }
 
-.pages {
-  width: 100vw;
-  height: 100vw;
-  scroll-snap-align: start;
-}
 
 /* Images CSS: */
-
-
-/* .img-container {
-  float: left;
-  width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
-  /* padding: 5px; /* if you want space between the images */
-/* } */
-
 
 
 .box {
@@ -297,31 +331,26 @@ header .container {
 }
 
 
-img {
+.image-1 img {
   filter: grayscale(100%);
 }
 
-img:hover {
-  /*filter: none;*/
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  /* animation: shake 2s; */
-  /* When the animation is finished, start again */
-  /* animation-iteration-count: infinite; */
+.image-1 img:hover {
+  filter: none;
 }
 
-/* @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-3deg); }
-    20% { transform: translate(-3px, 0px) rotate(2deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(2deg); }
-    50% { transform: translate(-1px, 2px) rotate(-3deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-3deg); }
-    80% { transform: translate(-1px, -1px) rotate(2deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-3deg); }
-  } */
+.pages-initial-photo {
+
+}
+
+.pages-sec-photo {
+  border: none;
+  position: relative;
+  width: 650px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
 
   /* If you want the image zoom in effect within the square container for the images
   [1] The container
@@ -387,11 +416,11 @@ img:hover {
   flex-direction: row;
   justify-content: center;
   background-color: black;
+  z-index: 10;
 }
 
 .project-page-menu nav {
   display: flex;
-  justify-content: space-around;
   align-content: center;
 }
 
@@ -402,6 +431,10 @@ img:hover {
   align-content: center;
   text-decoration: none;
   color: #56D7CC;
+}
+
+.project-page-menu div nav img {
+  align-content: center;
 }
 
 #project-1 {
@@ -453,7 +486,7 @@ img:hover {
 }
 
 .slider {
-  width:760px;
+  width:1040px;
   height:340px;
   overflow:hidden;
   margin:40px auto;
@@ -486,7 +519,7 @@ img:hover {
 }
 
 .slider ul li:hover {
-  width:600px;
+  width:900px;
 }
 
 .slider ul li:hover img {
@@ -496,13 +529,15 @@ img:hover {
 .slider li img {
   display:block;
   height:340px;
+  width: 900px;
+  object-fit: cover;
 }
 
 .title {
   position:absolute;
   left:0;
   bottom:0;
-  width:600px;
+  width:900px;
   background:rgba(22,22,22,0.4);
 }
 
@@ -522,6 +557,71 @@ img:hover {
 }
 
 
+
+/* Side Menu - Hamburger Menu: */
+
+
+.controls {
+  position: absolute;
+  justify-content: flex-end;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 11;
+  overflow: hidden;
+  width: 50px;
+}
+
+.menu-control {
+  fill: #fff;
+  margin: 15px;
+  align-content: flex-end;
+}
+
+.menu a, .menu a:focus, .menu a:visited {
+  color: white;
+  display: block;
+  font-size: 24px;
+  margin: 25px auto;
+  text-align: center;
+  text-decoration: none;
+  width: 400px;
+}
+
+.menu-close {
+  background-color: #56D7CC;
+  color: black;
+}
+
+.menu {
+  background-color: rgba(0,0,0, 0.7);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  overflow-y: scroll;
+  padding: 15px 30px;
+  position: fixed;
+  z-index: 11;
+
+  visibility: hidden;
+
+  opacity: 0;
+
+  transition: all .5s ease-in-out;
+
+  transform: translateX(100%);
+}
+
+.menu-open {
+  /* 1. Turn the visibility on here   */
+  visibility: visible;
+  /* 4. Set opacity to 1   */
+  opacity: 1;
+  /* 6. Set transform: translateX(0%)   */
+  /*    to move the screen horizontally   */
+  transform: translateX(0%);
+}
 
 
 
