@@ -46,7 +46,8 @@ h2 {
 header nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  /* justify-content: space-between; */
   align-content: center;
   /* width: 1200px; */
   /* padding-top: 10px; */
@@ -59,7 +60,7 @@ section {
 }
 
 article {
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0;
   padding: 20px;
 }
@@ -215,16 +216,17 @@ header .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  width: 100vw;
+  align-items: flex-start;
+  width: 500vw;
   margin: 0 auto;
 }
 
 .work-justify {
+  /* justify-content: center;
+  align-items: center; */
   text-align: left;
-  justify-content: center;
-  align-items: center;
   width: 1340px;
+  margin: 0 auto;
 }
 
 .slider-container {
@@ -239,11 +241,12 @@ header .container {
 .pages {
   scroll-snap-align: start;
   scroll-behavior: smooth;
-  margin-top: 20px;
-  display: flex;
+  margin: 0 auto;
+  /* margin-top: 20px; */
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center; */
+  /* align-content: center; */ */
 }
 
 
@@ -267,7 +270,9 @@ header .container {
 .start-header a {
   text-decoration: none;
   color: black;
+  justify-content: space-around;
   text-transform: uppercase;
+  padding: 0 30px;
   font-size: 16px;
 }
 
@@ -458,7 +463,7 @@ header .container {
   position: relative;
   text-align: left;
   width: 750px;
-  height: 400px;
+  height: 580px;
 }
 
 .about-margins {
@@ -582,10 +587,36 @@ footer {
   margin: 0;
 }
 
+.hero-image-1 {
+  /* border: 2px solid #56D7CC; */
+  background-image: url("../images/zojio/zojio-homepage-old.png");
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  width: 700px;
+  height: 650px;
+  z-index: 7;
+}
+
 .hero-image-2 {
   /* border: 2px solid #56D7CC; */
-  background-image: url("../images/shruti-2.jpg");
+  background-image: url("../images/lime-app/mock-ups-3.png");
   background-size: cover;
+  background-position: top;
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  width: 700px;
+  height: 650px;
+  z-index: 7;
+}
+
+.hero-image-3 {
+  /* border: 2px solid #56D7CC; */
+  background-image: url("../images/eventbrite/low-fi-wireframes.png");
+  background-size: contain;
   background-position: top;
   position: absolute;
   right: 100px;
@@ -607,12 +638,17 @@ footer {
 .pages-sec-photo {
   border: none;
   position: relative;
+  display: block;
   width: 650px;
-  height: 400px;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
+  margin: 20px auto;
   padding: 20px 0;
+}
+
+.pages-explaination {
+  margin: 0 auto;
+  width: 650px;
 }
 
 /* Accordian for WORK Project Pages: */
