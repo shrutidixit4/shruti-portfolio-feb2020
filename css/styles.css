@@ -147,7 +147,7 @@ header .container {
   overflow: scroll;
   /* flex-wrap: wrap; */
   width: 100vw;
-  height: 1140px;
+  height: 940px;
   /* background-color: teal; */
 }
 
@@ -441,6 +441,32 @@ header .container {
   width: 950px;
   height: 400px;
 }
+
+.about-margins {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.about-summary-box h2 {
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-weight: 100;
+  font-size: 60px;
+}
+
+footer {
+  height: 200px;
+  background-color: black;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+
+
+
 
 
 /* WORK PAGE Other Classes and IDs */
