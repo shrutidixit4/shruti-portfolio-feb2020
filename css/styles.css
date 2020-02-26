@@ -147,10 +147,9 @@ header .container {
   overflow: scroll;
   /* flex-wrap: wrap; */
   width: 100vw;
-  height: 940px;
+  height: 1140px;
   /* background-color: teal; */
 }
-
 
 .article-container-1 {
   display: flex;
@@ -177,13 +176,14 @@ header .container {
 
 .about-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100vw;
-  height: 600px;
+  height: 640px;
   text-align: center;
   background-color: #56D7CC;
-  padding: 50px 40px;
+  padding: 100px 250px;
   color: black;
 }
 
@@ -382,26 +382,65 @@ header .container {
 .about-image-box {
   display: flex;
   flex-direction: row;
-  width: 400px;
-  height: inherit;
-  padding: 50px 40px;
+  position: relative;
+  width: 560px;
+  height: 700px;
+  margin-right: 280px;
+  /* padding: 50px 40px; */
   color: black;
 }
 
 .about-name {
   font-family: 'Bungee Inline', cursive;
   font-weight: normal;
-  font-size: 40px;
-  text-shadow: 2px 2px #000000;
-  color: #56D7CC;
-  width: 55%;
+  font-size: 84px;
+  text-shadow: 2px 2px black;
+  color: white;
   position: absolute;
-  /* right: 0;
-  top: 360px; */
-  margin-right: 20px;
+  width: 40%;
+  right: 0;
+  bottom: 54px;
+  /* margin-right: 20px; */
   z-index: 8;
 }
 
+.about-image-grouping {
+  display: flex;
+  justify-content: flex-start;
+  width: 550px;
+  height: 700px;
+  margin: 0;
+}
+
+.about-image {
+  /* border: 2px solid #56D7CC; */
+  background-image: url("../images/shruti-2.jpg");
+  background-size: cover;
+  background-position: top;
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 600px;
+  z-index: 7;
+}
+
+.about-box {
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  right: 0;
+  bottom: 0px;
+  border: 2px solid black;
+}
+
+.about-summary-box {
+  justify-content: flex-start;
+  align-content: flex-start;
+  position: relative;
+  text-align: left;
+  width: 950px;
+  height: 400px;
+}
 
 
 /* WORK PAGE Other Classes and IDs */
