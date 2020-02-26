@@ -48,7 +48,7 @@ header nav {
   flex-direction: row;
   justify-content: space-between;
   align-content: center;
-  width: 1400px;
+  /* width: 1200px; */
   /* padding-top: 10px; */
 }
 
@@ -102,8 +102,11 @@ article {
 /* Containers */
 
 .container {
-  width: 960px;
+  width: 1200px;
   margin: 0 auto;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
 }
 
 header .container {
@@ -199,7 +202,8 @@ header .container {
 }
 
 .work-display {
-  display: block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -209,18 +213,18 @@ header .container {
 
 .work-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width: 1082px;
+  width: 100vw;
   margin: 0 auto;
 }
 
 .work-justify {
-  flex-direction: column;
+  text-align: left;
   justify-content: center;
   align-items: center;
+  width: 1340px;
 }
 
 .slider-container {
@@ -234,7 +238,8 @@ header .container {
 
 .pages {
   scroll-snap-align: start;
-  margin-top: 30px;
+  scroll-behavior: smooth;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,7 +259,7 @@ header .container {
 }
 
 .start-header {
-  justify-content: space-between;
+  /* justify-content: center; */
   align-content: center;
   margin: 0 auto;
 }
@@ -405,15 +410,15 @@ header .container {
 .about-name {
   font-family: 'Bungee Inline', cursive;
   font-weight: normal;
-  font-size: 84px;
-  text-shadow: 2px 2px black;
-  color: white;
+  font-size: 94px;
+  text-shadow: 2px 2px white;
+  color: black;
   position: absolute;
-  width: 40%;
+  width: 50%;
   /* right: 0;
   bottom: 54px; */
   right: 0;
-  top: 54px;
+  top: 240px;
   /* margin-right: 20px; */
   z-index: 8;
 }
@@ -515,25 +520,32 @@ footer {
 .project-page-menu a {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  width: 100px;
+  width: 200px;
 }
 
 .project-page-menu nav {
-  /* display: flex; */
-  align-content: center;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .project-page-menu nav a {
   height: 40px;
   width: 220px;
-  align-content: center;
-  padding-left: 40px;
-  padding-right: 40px;
-  overflow: wrap;
+  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
   color: white;
+}
+
+/* .project-page-menu div {
+  display: inline-block;
+  justify-content: flex-end;
+  width: 100px;
+} */
+
+.project-page-menu div nav {
+  justify-content: flex-end;
+  width: 100px;
 }
 
 .project-page-menu div nav img {
@@ -687,8 +699,7 @@ footer {
 /* Side Menu - Hamburger Menu: */
 
 .controls {
-  /* position: relative; */
-  justify-content: flex-end;
+  /* position: aboslute; */
   align-content: center;
   align-items: center;
   top: 0;
@@ -696,13 +707,11 @@ footer {
   cursor: pointer;
   z-index: 11;
   overflow: hidden;
-  width: 50px;
 }
 
 .menu-control {
   fill: #fff;
   margin: 15px;
-  align-content: flex-end;
 }
 
 .menu a, .menu a:focus, .menu a:visited {
@@ -726,7 +735,7 @@ footer {
 }
 
 .menu {
-  background-color: rgba(86, 215, 204, 0.6);
+  background-color: rgba(86, 215, 204, 0.88);
   /* bottom: 0;
   left: 0; */
   right: 0;
