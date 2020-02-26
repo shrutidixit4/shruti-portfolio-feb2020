@@ -130,7 +130,7 @@ header .container {
 .hero-container-2 {
   background-color: black;
   width: 100vw;
-  height: 740px;
+  height: 840px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -172,15 +172,16 @@ header .container {
   align-items: center;
   text-align: left;
   left: 40px;
-  width: 50%;
+  width: 750px;
   margin-top: 30px;
   color: black;
 }
 
 .article-container-2 p{
   color: white;
-  width: 700px;
-  margin-top: 25px;
+  width: 510px;
+  margin-top: 15px;
+  margin-left: 10px;
 }
 
 .about-container {
@@ -201,8 +202,9 @@ header .container {
   display: block;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  padding: 0 30px;
+  width: 100vw;
+  margin-top: 20px;
+  padding: 40px 0;
 }
 
 .work-container {
@@ -210,6 +212,7 @@ header .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 1082px;
   margin: 0 auto;
 }
@@ -230,8 +233,6 @@ header .container {
 }
 
 .pages {
-  width: 100%;
-  height: 100%;
   scroll-snap-align: start;
   margin-top: 30px;
   display: flex;
@@ -546,8 +547,9 @@ footer {
 .hero-work-header-2 {
   font-family: 'Bungee Inline', cursive;
   font-weight: normal;
-  font-size: 74px;
+  font-size: 64px;
   color: #56D7CC;
+  width: 600px;
 }
 
 .hero-image-box-2 {
@@ -555,8 +557,7 @@ footer {
   flex-direction: row;
   position: relative;
   width: 850px;
-  height: 700px;
-  margin-right: 200px;
+  height: 840px;
   /* padding: 50px 40px; */
   color: black;
 }
@@ -575,19 +576,19 @@ footer {
   background-size: cover;
   background-position: top;
   position: absolute;
-  right: 50px;
+  right: 100px;
   bottom: 0;
-  width: 650px;
-  height: 600px;
+  width: 700px;
+  height: 650px;
   z-index: 7;
 }
 
 .hero-box-2 {
   position: absolute;
-  width: 400px;
+  width: 650px;
   height: 600px;
-  right: 0;
-  top: 40px;
+  right: 200px;
+  top: 80px;
   border: 2px solid #56D7CC;
 }
 
