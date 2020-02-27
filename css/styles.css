@@ -316,6 +316,7 @@ header .container {
   align-items: flex-end;
   width: 550px;
   height: 200px;
+  margin: 110px 0;
 }
 
 .box {
@@ -343,11 +344,11 @@ header .container {
   padding: 40px;
 }
 
-.home-cards img {
+#home-cards-hover {
   filter: grayscale(100%);
 }
 
-.home-cards img:hover {
+#home-cards-hover:hover {
   filter: none;
 }
 
@@ -365,12 +366,77 @@ header .container {
   z-index: 8;
 }
 
-.image-size {
+.image-size-hover-zoom {
+  height: 400px;
+  overflow: hidden;
+}
+
+.image-size-hover-zoom:hover span {
+  transform: scale(1.1);
+  overflow: hidden;
+  transition: transform .5s ease;
+}
+
+.image-size-1 {
   /* border: 2px solid #56D7CC; */
+  background-image: url("../images/zojio/zojio-homepage-new.png");
+  background-size: cover;
+  background-position: top;
   position: relative;
   width: 550px;
   height: 400px;
 }
+
+
+.image-size-2 {
+  /* border: 2px solid #56D7CC; */
+  background-image: url("../images/lime-app/lime-app-1.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 550px;
+  height: 400px;
+}
+
+.image-size-3 {
+  /* border: 2px solid #56D7CC; */
+  background-image: url("../images/eventbrite/eventbrite-homepage.png");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 550px;
+  height: 400px;
+}
+
+.image-size-4 {
+  /* border: 2px solid #56D7CC; */
+  background-image: url("../images/musical-conquest/musicalconquest-1.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 550px;
+  height: 400px;
+}
+
+.image-size-5 {
+  /* border: 2px solid #56D7CC; */
+  background-image: url("../images/piip/piip-1.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 550px;
+  height: 400px;
+}
+
+/* .image-size-6 {
+  /* border: 2px solid #56D7CC; */
+  background-image: url("../images/shruti-2.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  width: 550px;
+  height: 400px;
+} */
 
 .image-grouping {
   display: flex;
@@ -415,15 +481,16 @@ header .container {
 .about-name {
   font-family: 'Bungee Inline', cursive;
   font-weight: normal;
-  font-size: 94px;
+  font-size: 100px;
   text-shadow: 2px 2px white;
   color: black;
   position: absolute;
-  width: 50%;
+  line-height: 90%;
+  width: 48%;
   /* right: 0;
   bottom: 54px; */
   right: 0;
-  top: 240px;
+  bottom: 74px;
   /* margin-right: 20px; */
   z-index: 8;
 }
@@ -444,7 +511,7 @@ header .container {
   position: absolute;
   left: 0;
   width: 400px;
-  height: 600px;
+  height: 500px;
   z-index: 7;
 }
 
@@ -489,14 +556,7 @@ footer {
   margin-top: 100px;
   color: white;
   text-align: center;
-  justify-content: center;
 }
-
-
-
-
-
-
 
 
 /* WORK PAGE Other Classes and IDs */
@@ -801,54 +861,6 @@ footer {
   transform: translateX(0%);
 }
 
-
-
-
-/* If you want the image zoom in effect within the square container for the images
-[1] The container
-.img-hover-zoom {
-  height: 300px;
-  overflow: hidden;
-}
-[2] Transition property for smooth transformation of images
-.img-hover-zoom img {
-  transition: transform .5s ease;
-}
-[3] Finally, transforming the image when container gets hovered
-.img-hover-zoom:hover img {
-  transform: scale(1.5);
-} */
-
-
-/* Colors: */
-
-.bg-bright-green {
-background-color: #56D7CC;
-}
-
-.bg-red {
-background-color: red;
-}
-
-.bg-green {
-background-color: green;
-}
-
-.bg-blue {
-background-color: cornflowerblue;
-}
-
-.bg-orange {
-background-color: orange;
-}
-
-.bg-yellow {
-background-color: yellow;
-}
-
-.bg-violet {
-background-color: violet;
-}
 
 
 /* Project Pages: */
